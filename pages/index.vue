@@ -4,7 +4,6 @@
     <About/>
     <Services/>
     <Footer/>
-    <Sidebar/>
     <Up/>
   </div>
 </template>
