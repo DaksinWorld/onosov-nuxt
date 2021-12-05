@@ -96,7 +96,6 @@ form {
 
 label {
   color: var(--black);
-  opacity: 26%;
   margin-top: 15px;
   font-size: 25px;
 }
