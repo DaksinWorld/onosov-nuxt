@@ -9,7 +9,7 @@
             We help our clients achieve the highest level of operational excellence so they can focus on what matters - their core business.
             Through our comprehensive range of services, we ensure our clients stay ahead in the ever-changing technology landscape and maximize their overall success.
           </h6>
-          <div class='photo'>
+          <div class='photo' lazy-background="../static/img/codebg.webp">
 
           </div>
         </div>
@@ -43,7 +43,6 @@ h6 {
 .photo {
   position: absolute;
   background-attachment: fixed;
-  background-image: url("../static/img/codebg.png");
   background-size: cover;
   height: 470px;
   width: 44%;
@@ -52,7 +51,6 @@ h6 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: radial-gradient(50% 50% at 50% 50%, rgba(103, 103, 103, 0.21) 0%, #485fa8 100%);
 }
 
 @media screen and (max-width: 1630px) {

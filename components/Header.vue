@@ -84,7 +84,7 @@ h4 {
 
 .photo {
   background-attachment: fixed;
-  background-image: url("../static/img/kid.png");
+  background-image: url("../static/img/kid.webp");
   background-size: cover;
   height: 700px;
   width: 100%;
