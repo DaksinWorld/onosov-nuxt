@@ -74,6 +74,7 @@ h6:hover {
 h4 {
   color: white;
   font-weight: 400;
+  text-align: center;
 }
 
 .btn {
