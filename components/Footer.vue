@@ -3,7 +3,7 @@
     <img class='logo' src='../static/img/logo.svg' alt='logo'>
     <div class='cont'>
       <h6>Info</h6>
-      <h6>Marketing</h6>
+      <h6><nuxt-link to='/marketing'>Marketing</nuxt-link></h6>
       <h6>Support</h6>
     </div>
     <div class='icons'>
@@ -47,6 +47,10 @@ footer {
   font-weight: 300;
   margin: 5px 0;
   text-align: center;
+}
+
+a {
+  color: white;
 }
 
 img {
