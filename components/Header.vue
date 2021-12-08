@@ -23,7 +23,7 @@
     </div>
     <div class="picture" id='home'>
       <a class="photo">
-        <h1>Welcome to ONOSOV</h1>
+        <h1>Welcome to Onosov Business</h1>
         <h4>We Get the IT Job Done</h4>
         <button class='btn'>Book Now</button>
       </a>

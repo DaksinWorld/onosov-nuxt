@@ -4,11 +4,11 @@
       <a id='about'>
         <div class='about-cont'>
           <h3>About Us</h3>
-          <h6>
+          <h5>
             Here at Onosov Business, our mission goes beyond providing technology solutions.
             We help our clients achieve the highest level of operational excellence so they can focus on what matters - their core business.
             Through our comprehensive range of services, we ensure our clients stay ahead in the ever-changing technology landscape and maximize their overall success.
-          </h6>
+          </h5>
           <div class='photo' lazy-background="../static/img/codebg.webp">
 
           </div>
@@ -35,7 +35,7 @@
   margin-bottom: 125px;
 }
 
-h6 {
+h5 {
   margin-top: 20px;
   width: 60%;
 }
@@ -65,7 +65,7 @@ h6 {
   h3 {
     font-size: 40px;
   }
-  h6 {
+  h5 {
     font-size: 23px;
   }
 }
@@ -74,7 +74,7 @@ h6 {
   h3 {
     font-size: 44px;
   }
-  h6 {
+  h5 {
     font-size: 26px;
     width: 83%;
   }
