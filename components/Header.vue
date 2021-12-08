@@ -2,7 +2,7 @@
   <div>
     <div class="container">
       <nav>
-        <img class="logo" id='logo' src="../static/img/blacklogo.svg" alt="black-logo">
+        <img class="logo" width='450px' height='120px' id='logo' src="../static/img/blacklogo.svg" alt="black-logo">
         <div class="h3" @click=''>
           <h6 tabindex='1'><a href='#home'>Home</a></h6>
           <h6 tabindex='1'><a href='#about'>About</a></h6>
@@ -23,7 +23,7 @@
     </div>
     <div class="picture" id='home'>
       <a class="photo">
-        <h1>Welcome to Onosov Business</h1>
+        <h1>Onosov Business. IT-Services</h1>
         <h4>We Get the IT Job Done</h4>
         <button class='btn'>Book Now</button>
       </a>
@@ -52,6 +52,7 @@ h6, h6 > a {
 h1 {
   color: var(--white);
   font-family: 'Times New Roman', serif;
+  text-align: center;
 }
 
 

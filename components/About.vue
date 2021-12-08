@@ -8,6 +8,7 @@
             Here at Onosov Business, our mission goes beyond providing technology solutions.
             We help our clients achieve the highest level of operational excellence so they can focus on what matters - their core business.
             Through our comprehensive range of services, we ensure our clients stay ahead in the ever-changing technology landscape and maximize their overall success.
+
           </h5>
           <div class='photo' lazy-background="../static/img/codebg.webp">
 

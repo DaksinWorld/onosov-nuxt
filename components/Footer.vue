@@ -1,6 +1,6 @@
 <template>
   <footer id='contact'>
-    <img class='logo' src='../static/img/logo.svg' alt='logo'>
+    <img class='logo' width='450px' height='120px' src='../static/img/logo.svg' alt='logo'>
     <div class='cont'>
       <h6>Info</h6>
       <h6><nuxt-link to='/marketing'>Marketing</nuxt-link></h6>
@@ -8,10 +8,10 @@
     </div>
     <div class='icons'>
       <a href='#' target='_blank'>
-        <img src='../static/img/instagram.svg' alt='instagram'>
+        <img width='60px' height='60px' src='../static/img/instagram.svg' alt='instagram'>
       </a>
       <a href='#' target='_blank'>
-        <img src='../static/img/telegram.svg' alt='telegram'>
+        <img width='60px' height='60px' src='../static/img/telegram.svg' alt='telegram'>
       </a>
     </div>
     <h6 class='footer-info'>
