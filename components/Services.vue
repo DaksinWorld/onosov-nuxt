@@ -60,7 +60,10 @@ export default {
           От <bold>${this.name}</bold> - ${this.email}
           Надо сделать ${text}
         `,
-      })
+      }, { headers: {
+          "Content-Type": "application/json",
+          'Access-Control-Allow-Origin': '*'
+        } })
     },
   }
 }
