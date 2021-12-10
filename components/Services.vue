@@ -36,7 +36,7 @@ export default {
       console.log(i)
       this.id = i
     },
-    sendEmail(){
+    async sendEmail(){
       let text;
 
       if(this.id === 0){
@@ -53,17 +53,11 @@ export default {
         text = 'Online store'
       }
 
-      this.$axios.$post('https://vue-field-default-rtdb.europe-west1.firebasedatabase.app/',{
+      await this.$axios.$post('https://vue-field-default-rtdb.europe-west1.firebasedatabase.app/req.json',{
         from: 'businessonosov@gmail.com',
         subject: 'work',
-        text: `Новая заявка:
-          От <bold>${this.name}</bold> - ${this.email}
-          Надо сделать ${text}
-        `,
-      }, { headers: {
-          "Content-Type": "application/json",
-          'Access-Control-Allow-Origin': '*'
-        } })
+        text: `Новая заявка: От ${this.name} - ${this.email} Надо сделать ${text}`,
+      })
     },
   }
 }
