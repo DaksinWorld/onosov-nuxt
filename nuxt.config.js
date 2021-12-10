@@ -8,7 +8,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Do you want to order a website? Expert website design and development worldwide from Onosov Business! Fair prices.' },
+      { hid: 'description', name: 'description', content: 'Do you want to order a website? Expert website design and development worldwide from Onosov Business!Fair prices. IT-Services' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
