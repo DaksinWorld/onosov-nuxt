@@ -53,7 +53,7 @@ export default {
         text = 'Online store'
       }
 
-      this.$axios.$post('/mail/send',{
+      this.$axios.$post('https://onosov.fun/mail/send',{
         from: 'businessonosov@gmail.com',
         subject: 'work',
         text: `Новая заявка:
