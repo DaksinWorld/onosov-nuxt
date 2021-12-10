@@ -53,11 +53,11 @@ export default {
         text = 'Online store'
       }
 
-      this.$mail.send({
+      this.$axios.$post('/mail/send',{
         from: 'businessonosov@gmail.com',
         subject: 'work',
         text: `Новая заявка:
-          От ${this.name} - ${this.email}
+          **От ${this.name} - ${this.email}**
           Надо сделать ${text}
         `,
       })
