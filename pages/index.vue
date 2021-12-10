@@ -5,6 +5,7 @@
     <Services/>
     <Footer/>
     <Up/>
+    <Message/>
   </div>
 </template>
 

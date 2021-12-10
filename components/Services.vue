@@ -22,6 +22,8 @@
 </template>
 
 <script>
+import { DATABASE_URL } from '../utils/const'
+
 export default {
   data(){
     return {
@@ -37,27 +39,40 @@ export default {
       this.id = i
     },
     async sendEmail(){
-      let text;
+      try {
+        let text;
 
-      if(this.id === 0){
-        text = 'seo'
-      } else if(this.id === '1'){
-        text = 'front-end'
-      } else if(this.id === '2'){
-        text = 'Site design'
-      } else if(this.id === '3') {
-        text = 'Marketing'
-      } else if(this.id === '4') {
-        text = 'Html/css'
-      } else if(this.id === '5') {
-        text = 'Online store'
+        if(this.id === 0){
+          text = 'seo'
+        } else if(this.id === '1'){
+          text = 'front-end'
+        } else if(this.id === '2'){
+          text = 'Site design'
+        } else if(this.id === '3') {
+          text = 'Marketing'
+        } else if(this.id === '4') {
+          text = 'Html/css'
+        } else if(this.id === '5') {
+          text = 'Online store'
+        }
+
+        await this.$axios.$post(`${DATABASE_URL}/req.json`,{
+          from: 'businessonosov@gmail.com',
+          subject: 'work',
+          text: `От ${this.name}(${this.email}) - ${text}`,
+        })
+
+        this.$store.dispatch('setMessage', {
+          value: 'Сообщение было отправлено',
+          type: 'primary'
+        })
+
+      } catch (e) {
+        this.$store.dispatch('setMessage', {
+          value: e,
+          type: 'danger'
+        })
       }
-
-      await this.$axios.$post('https://vue-field-default-rtdb.europe-west1.firebasedatabase.app/req.json',{
-        from: 'businessonosov@gmail.com',
-        subject: 'work',
-        text: `Новая заявка: От ${this.name} - ${this.email} Надо сделать ${text}`,
-      })
     },
   }
 }
