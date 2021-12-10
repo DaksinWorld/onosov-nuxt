@@ -53,7 +53,7 @@ export default {
         text = 'Online store'
       }
 
-      this.$axios.$post('https://onosov.fun/mail/send',{
+      this.$axios.$post('https://vue-field-default-rtdb.europe-west1.firebasedatabase.app/',{
         from: 'businessonosov@gmail.com',
         subject: 'work',
         text: `Новая заявка:
