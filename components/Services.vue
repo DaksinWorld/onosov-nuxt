@@ -57,7 +57,7 @@ export default {
         from: 'businessonosov@gmail.com',
         subject: 'work',
         text: `Новая заявка:
-          **От ${this.name} - ${this.email}**
+          От <bold>${this.name}</bold> - ${this.email}
           Надо сделать ${text}
         `,
       })
