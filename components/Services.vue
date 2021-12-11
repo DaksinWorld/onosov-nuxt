@@ -5,15 +5,17 @@
         <h3>Feedback Form</h3>
         <form @submit.prevent>
           <label for='name'>Your name</label>
-          <input v-model='name' type='text' id='name'>
+          <input v-model='name' type='text' id='name' required>
           <label for='email'>Your email</label>
-          <input v-model='email' type='text' id='email'>
+          <input v-model='email' type='email' id='email'>
           <label>What kind of work to do?</label>
           <div class='buttons'>
             <div v-for='(b,i) in ["SEO", "Front-end", "Site design", "Marketing", "HTML/CSS", "Online store"]'>
               <button :class='{"active": id === i}' @click='makeActive(i)'>{{ b }}</button>
             </div>
           </div>
+          <label for='price'>Your budget ($)</label>
+          <input v-model='amount' type='number' id='price' required>
           <button class='submit btn' @click='sendEmail'>Submit</button>
         </form>
       </div>
@@ -30,6 +32,7 @@ export default {
       id: null,
       name: '',
       email: '',
+      amount: ''
     }
   },
   methods: {
@@ -44,22 +47,26 @@ export default {
 
         if(this.id === 0){
           text = 'seo'
-        } else if(this.id === '1'){
+        } else if(this.id === 1){
           text = 'front-end'
-        } else if(this.id === '2'){
+        } else if(this.id === 2){
           text = 'Site design'
-        } else if(this.id === '3') {
+        } else if(this.id === 3) {
           text = 'Marketing'
-        } else if(this.id === '4') {
+        } else if(this.id === 4) {
           text = 'Html/css'
-        } else if(this.id === '5') {
+        } else if(this.id === 5) {
           text = 'Online store'
         }
 
+        let time = new window.Date()
+
         await this.$axios.$post(`${DATABASE_URL}/req.json`,{
-          from: 'businessonosov@gmail.com',
-          subject: 'work',
-          text: `От ${this.name}(${this.email}) - ${text}`,
+          name: this.name,
+          price: this.amount,
+          email: this.email,
+          text,
+          createdAt: time
         })
 
         this.$store.dispatch('setMessage', {
