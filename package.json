@@ -19,7 +19,7 @@
     "hchs-vue-charts": "^1.2.8",
     "nuxt": "^2.15.7",
     "nuxt-lazy-load": "^1.2.9",
-    "nuxt-mail": "^3.0.12",
+    "nuxt-mail": "^3.0.18",
     "vue-chartjs": "2.6"
   },
   "devDependencies": {
