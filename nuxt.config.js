@@ -9,7 +9,8 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Do you want to order a website? Expert website design and development worldwide from Onosov Business!Fair prices. IT-Services. Service' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
+      { name: 'freelancehunt', content: '137dc61b05e986a'}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }
